@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.happylottery.mapper.TLotteryWinInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.project.happylottery.entity.TLotteryWinInfo">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="open_date" property="openDate" />
+        <result column="week" property="week" />
+        <result column="red" property="red" />
+        <result column="blue" property="blue" />
+        <result column="sales" property="sales" />
+        <result column="pool_money" property="poolMoney" />
+        <result column="code" property="code" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, open_date, week, red, blue, sales, pool_money, code
+    </sql>
+
+</mapper>
